@@ -9,7 +9,7 @@ endef
 all: index deploy
 
 .PHONY: init
-init: createrepo robots.txt
+init: createrepo robots.txt 404.html
 
 .PHONY: createrepo
 createrepo:
@@ -19,6 +19,10 @@ createrepo:
 robots.txt:
 	mkdir -p public
 	printf 'User-agent: *\nDisallow: /\n' > public/robots.txt
+
+404.html:
+	mkdir -p public
+	cp src/404.html public
 
 .PHONY: index
 index:
