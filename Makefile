@@ -1,5 +1,5 @@
 SURGE_SUBDOMAIN ?= awesome-name
-SURGE_URL = https://${SURGE_SUBDOMAIN}.surge.sh
+SURGE_URL ?= https://${SURGE_SUBDOMAIN}.surge.sh
 
 define SURGE_CMD
 	./surge
