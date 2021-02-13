@@ -3,13 +3,17 @@ RPM Repository
 
 A repository of RPM packages for Qubes OS.
 
+> **Note**: This repository currently contains my packages, but the instructions in this README will allow you to get your own repository set up.
+
 Usage
 -----
 
-### Initialise the repository
+### Initialize the repository
+
+Remove all my packages and initialize your own repository.
 
 ```sh
-make init
+make clean init
 ```
 
 ### Add packages
