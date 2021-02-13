@@ -12,7 +12,21 @@ Usage
 make init
 ```
 
+### Add packages
+
 The RPM packages are meant to be stored into the `public/qubes-os/r4.1/testing/packages` directory.
+Add as many as you want, then update the repository metadata.
+
+```sh
+make update
+```
+
+Signing the repository allows people to verify that you (and not someone else) updated the repository.
+
+```sh
+# Your GPG key name would be different:
+GPG_NAME="Packaging" make sign
+```
 
 ### Deploy
 
