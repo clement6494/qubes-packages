@@ -53,3 +53,21 @@ Then deploy.
 SURGE_SUBDOMAIN='awesome-name' make deploy
 ```
 
+Contributions
+-------------
+
+Contributions are welcome! Please refer to the [contribution guidelines][contributing] to get started.
+
+Please note that this project is released with a [Contributor Code of Conduct][coc]. By participating in this project you agree to abide by its terms.
+
+  [contributing]: ./CONTRIBUTING.md
+  [coc]: ./CODE_OF_CONDUCT.md
+
+License
+-------
+
+Copyright © 2021 Gonzalo Bulnes Guilpain
+
+To the exclusion of files contained in the `public/` directory, this project is released under the GNU General Public License v2 (see [LICENSE](LICENSE.md)).
+
+The packages contained in the `public/` directory contain their own licensing information, and the rest is generated automatically by the code in this project.
