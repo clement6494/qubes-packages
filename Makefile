@@ -38,13 +38,15 @@ createrepo:
 
 robots.txt:
 	mkdir -p ${REPO_PREFIX}
+	# Surge kindly hosts us, let's save bandwidth where we can
 	printf 'User-agent: *\nDisallow: /\n' > ${REPO_PREFIX}robots.txt
 
+# Humans may visit too!
 404.html:
 	mkdir -p ${REPO_PREFIX}
 	cp src/404.html ${REPO_PREFIX}
 
-# Upddate the repository metadata after adding packages
+# Update the repository metadata after adding packages
 .PHONY: update
 update:
 	createrepo --update ${REPO_PREFIX}${REPO_PATH}
