@@ -20,7 +20,7 @@ endef
 
 # I don't usually install the Surge CLI globally, replace by "surge" if needed
 define SURGE_CMD
-	./surge
+	surge
 endef
 
 # Default target, what I'd likely want to do most often
